@@ -63,6 +63,7 @@ p {
 .logo {
     height: clamp(35px, 6vw, 45px);
     width: auto;
+    border-radius: 7px;
 }
 
 .theme-toggle {

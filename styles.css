@@ -307,3 +307,44 @@ body.light-mode .social-links a {
         color: inherit;
     }
 }
+/* Tags styling */
+.tags {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Light mode tags */
+body.light-mode .tags span {
+    background: rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+/* Optional hover effect */
+.tags span:hover {
+    transform: translateY(-2px);
+    background: var(--primary);
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tags {
+        gap: 0.6rem;
+    }
+    
+    .tags span {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.8rem;
+    }
+}

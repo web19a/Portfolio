@@ -22,7 +22,7 @@ const projects = [
         title: "Portfolio Website",
         tags: ["JavaScript", "CSS"],
         description: "Responsive portfolio with dark mode and animations",
-        image: "project2.jpg"
+        image: "Portfolio.png"
     }
 ];
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Web Developer Portfolio - Ananiya Biruk">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9XDB1T0MP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G9XDB1T0MP');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ananiya Biruk | Web Developer</title>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Ananiya Biruk's Logo" class="logo">
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <section class="hero" data-scroll-animation="fade-up">
+        <h1>Turning Ideas Into <span class="gradient-text">Digital Reality</span></h1>
+        <p class="hero-subtitle">Web Developer specializing in modern, client-focused solutions</p>
+    </section>
+
+    <section class="projects" data-scroll-animation="fade-up">
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search projects..." aria-label="Search projects">
+            <select id="filter-select" aria-label="Filter projects">
+                <option value="all">All</option>
+                <option value="React">React</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+        <div class="project-grid" id="project-container"></div>
+    </section>
+
+    <section class="contact" data-scroll-animation="fade-up">
+        <h2>Get in Touch</h2>
+        <form action="https://formspree.io/f/mblgjgbr" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com/yourprofile" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="mailto:your@email.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>© 2024 Ananiya Biruk. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/332454bf6e.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -349,7 +349,7 @@ body.light-mode .tags span {
     }
 }
 
-/* Add this to your CSS */
+/* Skills Section CSS */
 .skills {
     padding: 4rem var(--container-padding);
     text-align: center;
@@ -357,11 +357,12 @@ body.light-mode .tags span {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
     max-width: 1200px;
     margin-inline: auto;
+    perspective: 1000px;
 }
 
 .skill-card {
@@ -370,43 +371,48 @@ body.light-mode .tags span {
     border-radius: 16px;
     padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
     min-height: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.skill-content {
+    transform: translateZ(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .skill-card i {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.8rem;
     color: var(--primary);
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
 }
 
 .skill-card h3 {
-    margin: 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin: 0;
 }
 
 .skill-card p {
-    font-size: 0.9rem;
-    opacity: 0.8;
+    font-size: 0.95rem;
+    opacity: 0.9;
     margin: 0;
+    text-align: center;
 }
 
 /* Light Mode */
 body.light-mode .skill-card {
     background: var(--glass-light);
     border-color: rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .skill-card i {
-    color: var(--primary);
 }
 
 /* Responsive */

@@ -348,3 +348,82 @@ body.light-mode .tags span {
         padding: 0.3rem 0.8rem;
     }
 }
+
+/* Add this to your CSS */
+.skills {
+    padding: 4rem var(--container-padding);
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.skill-card {
+    background: var(--glass-dark);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.skill-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Light Mode */
+body.light-mode .skill-card {
+    background: var(--glass-light);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .skill-card i {
+    color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .skill-card {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -525,3 +525,80 @@ body.light-mode .bio-card {
         font-size: 1rem;
     }
 }
+/* GitHub Button Styles */
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.8rem;
+    background: var(--primary);
+    color: white !important;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.github-btn i {
+    font-size: 1.2rem;
+}
+
+.github-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: #5f58e6; /* Slightly darker primary color */
+}
+
+.github-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.github-btn:hover::before {
+    left: 100%;
+}
+
+/* Optional: Add floating animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.github-btn {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* For light mode */
+body.light-mode .github-btn {
+    background: var(--primary);
+    color: white !important;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .github-btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+    }
+    
+    .github-btn i {
+        font-size: 1rem;
+    }
+}

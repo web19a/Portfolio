@@ -15,14 +15,16 @@ const projects = [
         title: "E-Commerce Platform",
         tags: ["React", "Node.js"],
         description: "Full-stack shopping platform with payment integration",
-        image: "project1.jpg"
+        image: "project1.jpg",
+        gitLink: "https://github.com/web19a/Portfolio"
     },
     {
         id: 2,
         title: "Portfolio Website",
         tags: ["JavaScript", "CSS"],
         description: "Responsive portfolio with dark mode and animations",
-        image: "Portfolio.png"
+        image: "Portfolio.png",
+        gitLink: "https://github.com/web19a/Portfolio"
     }
 ];
 
@@ -58,6 +60,13 @@ function renderProjects() {
                 <div class="tags">
                     ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                 </div>
+<a href="${project.gitLink}" 
+   target="_blank" 
+   class="github-btn"
+   aria-label="View source code on GitHub">
+    <i class="fab fa-github"></i>
+    Source Code
+</a>
             </div>
         `).join('');
 }

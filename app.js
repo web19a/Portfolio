@@ -24,7 +24,7 @@ const projects = [
         title: "Modern To-Do List",
         tags: ["JavaScript", "CSS"],
         description: "To-Do list that has priority and due date with modern design",
-        image: "to-do.jpg",
+        image: "Screenshot_2025-03-26-23-53-08.png",
         gitLink: "https://github.com/web19a/Modern-to-do-list",
         demo: "https://moderntodos.netlify.app/"
     },

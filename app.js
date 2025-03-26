@@ -21,7 +21,7 @@ const projects = [
     {
         id: 2,
         title: "Modern To-Do List",
-        tags: ["React", "Node.js"],
+        tags: ["JavaScript", "CSS"],
         description: "To-Do list that has priority and due date with modern design",
         image: "to-do.jpg",
         gitLink: "https://github.com/web19a/Modern-to-do-list",
@@ -72,10 +72,9 @@ function renderProjects() {
                 <a href="${project.demo}" 
                     target="_blank" 
                     class="github-btn"
-                    style="background-color: lightblue;"
-                    aria-label="View source code on GitHub">
-                    <i class="fab fa-demo"></i>
-                    Source Code
+                    style="background-color: blue;"
+                    aria-label="Try demo website">
+                    TRY DEMO
                 </a>
             </div>
         `).join('');

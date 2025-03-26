@@ -12,20 +12,22 @@ function toggleTheme() {
 const projects = [
     {
         id: 1,
-        title: "E-Commerce Platform",
-        tags: ["React", "Node.js"],
-        description: "Full-stack shopping platform with payment integration",
-        image: "project1.jpg",
-        gitLink: "https://github.com/web19a/Portfolio"
-    },
-    {
-        id: 2,
         title: "Portfolio Website",
         tags: ["JavaScript", "CSS"],
         description: "Responsive portfolio with dark mode and animations",
         image: "Portfolio.png",
         gitLink: "https://github.com/web19a/Portfolio"
-    }
+    },
+    {
+        id: 2,
+        title: "Modern To-Do List",
+        tags: ["React", "Node.js"],
+        description: "To-Do list that has priority and due date with modern design",
+        image: "to-do.jpg",
+        gitLink: "https://github.com/web19a/Modern-to-do-list",
+        demo: "https://moderntodos.netlify.app/"
+    },
+    
 ];
 
 // Scroll Animations
@@ -60,13 +62,21 @@ function renderProjects() {
                 <div class="tags">
                     ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                 </div>
-<a href="${project.gitLink}" 
-   target="_blank" 
-   class="github-btn"
-   aria-label="View source code on GitHub">
-    <i class="fab fa-github"></i>
-    Source Code
-</a>
+                <a href="${project.gitLink}" 
+                    target="_blank" 
+                    class="github-btn"
+                    aria-label="View source code on GitHub">
+                    <i class="fab fa-github"></i>
+                    Source Code
+                </a>
+                <a href="${project.demo}" 
+                    target="_blank" 
+                    class="github-btn"
+                    style="background-color: lightblue;"
+                    aria-label="View source code on GitHub">
+                    <i class="fab fa-demo"></i>
+                    Source Code
+                </a>
             </div>
         `).join('');
 }

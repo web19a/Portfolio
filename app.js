@@ -16,7 +16,8 @@ const projects = [
         tags: ["JavaScript", "CSS"],
         description: "Responsive portfolio with dark mode and animations",
         image: "Portfolio.png",
-        gitLink: "https://github.com/web19a/Portfolio"
+        gitLink: "https://github.com/web19a/Portfolio",
+        display: "none"
     },
     {
         id: 2,
@@ -72,7 +73,7 @@ function renderProjects() {
                 <a href="${project.demo}" 
                     target="_blank" 
                     class="github-btn"
-                    style="background-color: blue;"
+                    style="background-color: blue; display: ${project.display}"
                     aria-label="Try demo website">
                     TRY DEMO
                 </a>

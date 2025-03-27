@@ -28,7 +28,14 @@ const projects = [
         gitLink: "https://github.com/web19a/Modern-to-do-list",
         demo: "https://moderntodos.netlify.app/"
     },
-    
+    {
+        id: 3,
+        title: "LuminaNexus",
+        tags: ["JavaScript"],
+        description: "A mesmerizing interactive particle network that reacts to mouse/touch input. Particles glow with dynamic hues, repel from interaction points, and form luminous connections with nearby nodes, creating an ever-shifting web of light against a cosmic gradient backdrop. Built with HTML5 Canvas, it blends physics-based motion and visual poetry into a responsive, meditative experience.",
+        image: "Screenshot_2025-03-27-02-57-33.png",
+        gitLink: "https://github.com/web19a/LuminaNexus",
+        demo: "https://luminanexus.netlify.app/"
 ];
 
 // Scroll Animations

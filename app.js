@@ -36,6 +36,7 @@ const projects = [
         image: "Screenshot_2025-03-27-02-57-33.png",
         gitLink: "https://github.com/web19a/LuminaNexus",
         demo: "https://luminanexus.netlify.app/"
+    }
 ];
 
 // Scroll Animations

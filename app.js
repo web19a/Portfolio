@@ -41,7 +41,7 @@ const projects = [
         id: 4,
         title: "BookHub",
         tags: ["JavaScript", "CSS"],
-        description: "BookHub - Educational Resource Manager<br>A responsive web platform for educators to organize and access teaching materials. Features secure authentication, interactive resource management (textbooks/guides), PDF integration, grade-level filtering, and real-time search. Built with vanilla JavaScript, CSS variables for theme switching, and local storage for offline functionality. Designed to streamline academic resource sharing with a clean, user-friendly interface.<br>(Key Features: Role-based access, dynamic filtering, PDF viewer, dark/light themes, responsive grid layout)<br>Perfect for showcasing full-stack capabilities in frontend development and UI/UX design.",
+        description: "BookHub: Educational resource manager with PDF, themes, responsive design. For educators.",
         image: "bookhub.png",
         gitLink: "https://github.com/web19a/bookhub",
         demo: "https://book19hub.netlify.app/"

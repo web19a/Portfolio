@@ -45,6 +45,15 @@ const projects = [
         image: "bookhub.png",
         gitLink: "https://github.com/web19a/bookhub",
         demo: "https://book19hub.netlify.app/"
+    },
+    {
+        id: 5,
+        title: "MatrixRain",
+        tags: ["JavaScript"],
+        description: "Matrix-style digital rain animation using HTML Canvas & JavaScript. Green ASCII characters cascade down a black screen. #WebDesign #JavaScript",
+        image: "2025-06-14 09.26.12.jpg",
+        gitLink: "https://github.com/web19a/MatrixRain",
+        demo: "https://matrixrain19.netlify.app"
     }
 ];
 

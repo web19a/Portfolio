@@ -72,15 +72,7 @@ function initScrollAnimations() {
 
 // Project Filtering
 function renderProjects() {
-    const searchQuery = document.getElementById('search-input').value.toLowerCase();
-    const filter = document.getElementById('filter-select').value;
-    
-    const filteredProjects = projects.filter(project => 
-        project.title.toLowerCase().includes(searchQuery) && 
-        (filter === 'all' || project.tags.includes(filter))
-    );
-
-    document.getElementById('project-container').innerHTML = filteredProjects
+    document.getElementById('project-container').innerHTML = projects
         .map(project => `
             <div class="glass-card" data-scroll-animation="fade-up">
                 ${project.image ? `<img src="${project.image}" alt="${project.title}" loading="lazy">` : ''}

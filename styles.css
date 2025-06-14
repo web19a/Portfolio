@@ -392,7 +392,7 @@ body.light-mode .tags span {
 
 .skill-card i {
     font-size: 2.8rem;
-    color: var(--primary);
+    
     margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
 }

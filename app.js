@@ -54,6 +54,15 @@ const projects = [
         image: "2025-06-14 09.26.12.jpg",
         gitLink: "https://github.com/web19a/MatrixRain",
         demo: "https://matrixrain19.netlify.app"
+    },
+    {
+        id: 5,
+        title: "MatrixRain",
+        tags: ["CSS"],
+        description: "Postcard for Fathers",
+        image: "Screenshot_2025-06-15-10-29-05.png",
+        gitLink: "https://github.com/web19a/father-s-postcard",
+        demo: "https://movieflix19tx.netlify.app"
     }
 ];
 

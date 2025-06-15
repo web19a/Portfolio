@@ -56,10 +56,10 @@ const projects = [
         demo: "https://matrixrain19.netlify.app"
     },
     {
-        id: 5,
-        title: "MatrixRain",
+        id: 6,
+        title: "Postcard",
         tags: ["CSS"],
-        description: "Postcard for Fathers",
+        description: "Happy Fathers' Day <br> Postcard for Fathers",
         image: "Screenshot_2025-06-15-10-29-05.png",
         gitLink: "https://github.com/web19a/father-s-postcard",
         demo: "https://movieflix19tx.netlify.app"

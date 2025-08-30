@@ -11,13 +11,22 @@ function toggleTheme() {
 // Project Data
 const projects = [
     {
-        id: 1,
+        id: 0,
         title: "Portfolio Website",
         tags: ["JavaScript", "CSS"],
         description: "Responsive portfolio with dark mode and animations",
         image: "Portfolio.png",
         gitLink: "https://github.com/web19a/Portfolio",
         display: "none"
+    },
+    {
+        id: 1,
+        title: "3D Molecule Visualizer",
+        tags: ["THREE.JS", "JavaScript", "CSS"],
+        description: "Interactive 3D molecular visualizer with detailed information, search functionality, and educational content for chemistry enthusiasts.",
+        image: "screenshot.png",
+        gitLink: "https://github.com/web19a/3D-molecule-visualizer",
+        demo: "https://3dmoles.netlify.app"
     },
     {
         id: 2,
